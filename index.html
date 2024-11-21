@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>URTour</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -59,6 +59,7 @@
           data-bs-target="#mynavbar">
           <span><i class="fa-solid fa-bars"></i></span>
         </button>
+        
         <div class="collapse navbar-collapse " id="mynavbar">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
@@ -79,11 +80,15 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#gallary">Gallary</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
             </li>
 
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact Us">Contact</a>
             </li>
           </ul>
 
@@ -356,7 +361,7 @@
     </section>
 
     <!-- Section Services Start -->
-    <section class="services">
+    <section class="services  bg-secondary" id="services">
       <div class="container">
 
         <div class="main-txt">
@@ -457,11 +462,11 @@
     </section>
 
     <!-- Section Gallary Start  -->
-    <section>
+    <section id="gallery">
       <div class="div main-txt text-light">
 
         <div class="text">
-          <h1><span>G</span>allary</h1>
+          <h1><span>G</span>allery</h1>
           <p>We come across many of life's most beautiful images while
             travelling.</p>
         </div>
@@ -797,59 +802,60 @@
       </div>
     </div>
 
-    <!-- --------------------------------------- -->
+    <!-- -----------------Contact page---------------------- -->
+    <section id="Contact Us">
+      <div class="container my-5" id="Contact">
+        <div class="row g-4">
+          
+          <div class="Contact col-lg-6">
+            <h1>Contact Us</h1>
+            <form>
+              <div class="mb-3">
+                <label for="fullName" class="form-label"></label>
+                <input type="text" class="form-control"
+                  id="fullName"
+                  placeholder="Enter your full name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label"></label>
+                <input type="email" class="form-control" id="email"
+                  placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label"></label>
+                <input type="text" class="form-control" id="subject"
+                  placeholder="Enter subject" required>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label"></label>
+                <input type="tel" class="form-control" id="phone"
+                  placeholder="Enter your phone number" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label"></label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Type your message" required></textarea>
+              </div>
+              <button type="submit"
+                class="btn btn-success">Submit</button>
+            </form>
+          </div>
 
-    <div class="container my-5">
-      <div class="row g-4">
-        <!-- Contact Form -->
-        <div class="Contact col-lg-6">
-          <h1>Contact Us</h1>
-          <form>
-            <div class="mb-3">
-              <label for="fullName" class="form-label"></label>
-              <input type="text" class="form-control"
-                id="fullName"
-                placeholder="Enter your full name" required>
+          <!-- Map -->
+          <div class="col-lg-6 bg-secondary bg-gradient">
+            <h2 class="text-black">Our Location</h2>
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019744959208!2d144.96305831531682!3d-37.8136279797516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sin!4v1695072967913!5m2!1sen!2sin"
+                allowfullscreen
+                loading="lazy">
+              </iframe>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label"></label>
-              <input type="email" class="form-control" id="email"
-                placeholder="Enter your email" required>
-            </div>
-            <div class="mb-3">
-              <label for="subject" class="form-label"></label>
-              <input type="text" class="form-control" id="subject"
-                placeholder="Enter subject" required>
-            </div>
-            <div class="mb-3">
-              <label for="phone" class="form-label"></label>
-              <input type="tel" class="form-control" id="phone"
-                placeholder="Enter your phone number" required>
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label"></label>
-              <textarea class="form-control" id="message" rows="4"
-                placeholder="Type your message" required>
-                            </textarea>
-            </div>
-            <button type="submit"
-              class="btn btn-success">Submit</button>
-          </form>
-        </div>
-
-        <!-- Map -->
-        <div class="col-lg-6">
-          <h3>Our Location</h3>
-          <div class="ratio ratio-16x9">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019744959208!2d144.96305831531682!3d-37.8136279797516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sin!4v1695072967913!5m2!1sen!2sin"
-              allowfullscreen
-              loading="lazy">
-            </iframe>
+            <hr>
+            <h3 class="text-center text-dark">URTour</h3>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Footer Start -->
     <section>
@@ -866,6 +872,7 @@
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-youtube"></i>
           <i class="fa-brands fa-pinterest-p"></i>
+          <a href="https://www.linkedin.com/in/aditya-dhamane/"><i class="fa-brands fa-linkedin"></a></i>
         </div>
         <div class="credit">
           <p class="text-dark">Designed By <a
@@ -873,8 +880,7 @@
           </p>
         </div>
         <div class="copyright">
-          <p class="text-dark">&copy;Copyright AdityaDhamane. All Rights
-            Reserved</p>
+          <p class="text-dark">&copy;Copyright AdityaDhamane. All Rights Reserved</p>
         </div>
       </footer>
     </section>
