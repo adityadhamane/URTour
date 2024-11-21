@@ -155,10 +155,10 @@
 .main-text h1 span{
     color: #ffa500;
 }
-/* .book .card{
-    border-radius: 10px;
-    box-shadow: 0px 5px 5px -6px black;
-} */
+.book .card{
+    background:antiquewhite;
+    /* filter: drop-shadow(2px 2px 10px orange); */
+}
 .book .row{
     margin-top: 30px;
 }
@@ -191,6 +191,9 @@
 }
 .book .submit:hover{
     width: 170px;
+}
+.Bimage{
+    filter: drop-shadow(2px 2px 15px orange);
 }
 @media (max-width:765px){
     .book{
@@ -418,6 +421,7 @@
 .whyus{
     text-align: center;
     color:#ffa500;
+    padding-top: 40px;
 }
 .whyus p{
     text-align: center;
@@ -456,7 +460,25 @@ padding-top: 30px;
     filter: drop-shadow(2px 2px 5px orange);
 }
 
+/* ------------ */
 
+/* #btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: gray;
+    color: darkgray;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+#btn:hover {
+    background-color: white;
+} */
 
 /* Footer Start */
 
@@ -466,9 +488,10 @@ padding-top: 30px;
     text-align: center;
     padding-bottom: 30px;
     background: cornsilk;
+    position:absolute;
 }
 #footer h1{
-    font-weight: 600;
+    font-weight: 100px;
     padding-top: 30px;
     text-shadow: 0px 0px 1px black;
 }
@@ -491,40 +514,8 @@ padding-top: 30px;
 }
 /* Footer End */
 
-/* @media (max-width: 600px) {
-    .whyvi {
-      width: 540px; 
-      height:370px;
-      padding-top: 75%; 
-    }
-  } */
 
-/* Responsive Design */
 
-/* @media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      align-items: center;
-    }
-    .header-right {
-      justify-content: center;
-    } 
-  }
-
-@media (max-width: 480px) {
-    .aboutimg{
-        width: 0; 
-        height:0;
-        padding:0;
-        margin: 0;
-    }
-    .bookimg{
-        width: 0;
-        height:0;
-        padding:0;
-        margin: 0;
-    }
-} */
 @media (max-width:450px){
     .home .content h5{
         font-size: 25px;
