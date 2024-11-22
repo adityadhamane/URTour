@@ -58,13 +58,6 @@
 
 /* /* Home Section Start */
 
-/* #carouselExampleSlidesOnly{
-    /* width: 100%;
-    height: 90vh;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/background\ img.png);
-    background-repeat: no-repeat;
-    background-size: cover; 
-}  */
 #carouselExampleSlidesOnly .carousel-inner .carousel-item .carousel-caption{
     text-align: center;
     padding-top: 200px;
@@ -134,10 +127,6 @@
         font-size: 13px;
     }
 }
-/* Home Section End */
-
-
-
 
 
 /* Section Book Start */
@@ -208,10 +197,6 @@
     width: 500px;
     height: 620px;
 }
-/* Section Book End */
-
-
-
 
 
 /* Section Packages Start */
@@ -290,7 +275,7 @@
     /* border: none; */
     cursor: pointer;
     border:4px solid black;
-    /* background-color:darkgray; */
+    background-color:#e9edc9; 
 }
 .services .card i{
     font-size: 80px;
@@ -316,13 +301,13 @@
 
 
 .div {
-    display: flex; /* Makes images align horizontally */
+    display: flex; 
     gap: 15px; 
-    overflow: hidden; /* Ensures content stays inside the container */
+    overflow: hidden; 
     box-shadow: 2px 2px 20px rgb(220, 242, 80);
   }
   .main-txt h1{
-    /* text-align: center; */
+
     justify-content: center;
     margin-top: 100px;
     font-weight: 600;
@@ -346,8 +331,8 @@
     margin: 0 3px; 
   }
   .div img:hover {
-    filter: saturate(100%); /* Enlarges the image on hover for better effect */
-    width:50%; /* Brings the image above others */
+    filter: saturate(100%); 
+    width:50%; 
   }
    .text {
     max-width: 50%;
@@ -359,12 +344,6 @@
     text-shadow: 2px 2px 20px rgb(220, 242, 80);
    }
 
-  
-
-
-
-
-
 
 /* About Start */
 .about{
@@ -375,15 +354,7 @@
 .about .card{
     border-radius: 10px;
 }
-/* .about .card img{
-    border-radius: 10px;
-} */
-/* .background-video{
-    width: 400px;
-    height: 100px;
-    object-fit:cover;
-    
-} */
+
 .about h2{
     font-weight: 600;
     letter-spacing: 1px;
@@ -407,16 +378,91 @@
 #about-btn:hover{
     width: 170px;
 }
-/* .aboutimg .whyvi{
-    box-shadow: inset;
-} */
 @media (max-width:600px){
     .aboutimg{
         padding: 0;
     }
 }
 
+/* -----------gallery------------------ */
 
+#gallery{
+    background: #d8e2dc;
+}
+.gallery span{
+    color: #ffa500;
+    font-size: larger;
+    filter: drop-shadow(2px 2px 5px orange);
+}
+.cardAnim{
+    background: #a3b18a;
+    background-color: #a3b18a;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+.cardAnim .card
+{
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+    background-color: #ccd5ae;
+}
+.cardAnim .card:hover
+{
+    height: 450px;
+}
+.cardAnim .card .imgContainer
+{
+    position: relative;
+    width:250px;
+    height:250px;
+    top:-50px;
+    left:10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.cardAnim .card .imgContainer img
+{
+    max-width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 5px 20px #386641;
+}
+.cardAnim .card .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+.cardAnim .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 330px){
+    .cardAnim .card .imgContainer{
+        left: -2px;
+    }
+}
+
+
+/* ------why choose us-------------- */
+
+.why{
+    padding-top: -30px;
+}
 
 .whyus{
     text-align: center;
@@ -427,8 +473,8 @@
     text-align: center;
 }
 
-/* About End */
 
+/* --------Reviews section------- */
 
 .review{
 padding-top: 30px;
@@ -440,45 +486,22 @@ padding-top: 30px;
     transform: scale(1.1);
 }
 
-/* --------Reviews section------- */
-
 .container .text-center{
     background: burlywood;
     filter: drop-shadow(2px 2px 10px orange);
 }
 .review{
-    background-color: aquamarine;
+    background-color: #90e0ef;
     filter: drop-shadow(2px 2px 10px orange);
 }
 
 
-/* ---------------------------------- */
-
-
+/* ------Contact--------------- */
 .Contact h1{
     color: black;
     filter: drop-shadow(2px 2px 5px orange);
 }
 
-/* ------------ */
-
-/* #btn {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 99;
-    font-size: 15px;
-    border: none;
-    outline: none;
-    background-color: gray;
-    color: darkgray;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-}
-#btn:hover {
-    background-color: white;
-} */
 
 /* Footer Start */
 
